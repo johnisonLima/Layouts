@@ -1,0 +1,45 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.puzzle .word{
+    display: flex;
+}
+
+.puzzle .word .letter{
+    width: 32px;
+    height: 32px;
+    margin: 0.8px;
+    background: #555;
+    color: white;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    order: 2;
+    right: 50%;
+}
+.puzzle .word .letter::before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.puzzle .word .letter:last-child{
+    margin-right: auto;
+}
+.puzzle .word .pivot{
+    background: #75a987;
+}
+.puzzle .word .pivot, .puzzle .word .pivot ~ .letter{
+    order: 1;
+    left: 50%;
+}

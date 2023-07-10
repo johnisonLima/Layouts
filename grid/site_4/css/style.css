@@ -1,0 +1,45 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 10vh calc(25vh - 10px) 40vh calc(25vh - 20px);
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.header{
+    background: #54D4EE;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+.ad-space{
+    background: #D8C8E5;
+    grid-column: 1;
+    grid-row: 2;
+}
+.rotator{
+    background: #898989;
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+.graphic{
+    background: #A1C265;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+.calendar{
+    background: #F3CEDF;
+    grid-column: 3;
+    grid-row: 3;
+}
+.pics{
+    background: #FFA502;
+    grid-column: 1 / span 3;
+    grid-row: 4;
+}

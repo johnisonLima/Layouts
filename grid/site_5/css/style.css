@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'header'
+        'sub-grid'
+        'footer'
+    ;
+}
+
+.header{
+    grid-area: header;
+    background-color: bisque;
+}
+
+.container main{
+    grid-area: sub-grid;
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'estat'
+        'volant'
+        'primo'
+        'qtdDez'
+        'aposta'
+        'dezSele'
+    ;       
+
+    width: 95vw;
+    margin: auto;
+}
+
+.wrap_estatisticas{
+    grid-area: estat;
+    background-color: chocolate;
+}
+
+.wrap_volante{
+    grid-area: volant;
+    background-color: blueviolet;
+}
+
+.wrap_primo{
+    grid-area: primo;
+    background-color: tomato;
+}
+
+.wrap_aposta{
+    grid-area: aposta;
+    background-color: burlywood;
+}
+
+.wrap_qtdDezenas{
+    grid-area: qtdDez;
+    background-color: slategrey;
+}
+
+.wrap_dezenaSelecionada{
+    grid-area: dezSele;
+    background-color: cornflowerblue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: wheat;
+}
+
+.phone_hidden{
+    display: none;
+}
+
+.tablet_hidden{
+    display: none;
+}
+
+.header,
+.wrap_aposta,
+.wrap_primo,
+.wrap_volante,
+.wrap_estatisticas,
+.wrap_qtdDezenas,
+.wrap_dezenaSelecionada,
+.footer{
+    min-height: 200px;
+}

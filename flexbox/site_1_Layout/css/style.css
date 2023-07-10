@@ -1,0 +1,33 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header, .footer{
+    background: deepskyblue;
+    height: 50px; 
+}
+.section{
+    display: flex;
+    gap: 10px;
+    min-height: calc(100vh - 140px);
+}
+.nav{
+    background: mediumspringgreen;
+    flex-grow: 2;
+}
+.aside{
+    background: deeppink;
+    flex-grow: 1;
+    height: auto;
+    /* order: -1; */
+}
+.article{
+    background: yellowgreen;
+    flex-grow: 6;
+}

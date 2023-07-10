@@ -1,0 +1,23 @@
+body{
+    background-image: linear-gradient(
+        to bottom, 
+        transparent 50px,
+        aliceblue 50px, 
+        aliceblue 0
+    ); 
+    height: 150vh;
+    margin: 0;
+}
+main{
+    width: 75vw;
+    max-width: 1000px;
+    margin: auto;
+}
+#stickyBack{
+    height: 50px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 5px 0px #00000080;
+    position: sticky;
+    top: -52px;
+    transition: 1s;
+}
